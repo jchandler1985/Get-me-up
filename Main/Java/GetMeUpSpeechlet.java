@@ -48,7 +48,7 @@ public class GetMeUpSpeechlet implements Speechlet {
         	AlarmTime = intent.getSlot("setTime");
         	AlarmOcc = intent.getSlot("setOccurrence");
         	Alarm = new GetMeUpAlarm(AlarmTime, AlarmOcc);
-        		if(getAlarmSet() = true) {
+        		if(Alarm.getAlarmSet() = true) {
         			return getAlarmResponse();
         		} else {
         			throw new SpeechletException("Couldn't Set Alarm")
